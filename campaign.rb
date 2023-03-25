@@ -44,3 +44,5 @@ else
   who = discount.uniq 
   puts who.length
 end
+ 
+ #caseの構文ミス
