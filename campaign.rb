@@ -46,7 +46,8 @@ p [1, 3, 2, 2, 3].uniq  #=> [1, 3, 2]
 #   who = discount.uniq 
 #   puts who.length
 # end
-  
+
+#なぜelseに入る？
 a = gets.to_i
 b = gets.to_i 
 
