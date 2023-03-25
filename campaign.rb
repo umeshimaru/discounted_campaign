@@ -16,28 +16,49 @@ p [1, 3, 2, 2, 3].uniq  #=> [1, 3, 2]
 
 
 =end 
-#キャンペーン対象外の日数
-without_campaign_dates = gets.to_i
+# #キャンペーン対象外の日数
+# without_campaign_dates = gets.to_i
 
-#直近何日か
-past_days = gets.to_i
+# #直近何日か
+# past_days = gets.to_i
 
-#直近のお客さんの名前
-past_customers = []
+# #直近のお客さんの名前
+# past_customers = []
 
-past_days.times do
-  person = gets.to_s
-  past_customers.push(person)
-end
+# past_days.times do
+#   person = gets.to_s
+#   past_customers.push(person)
+# end
 
-#キャンペーン対象の人数
-campaign_numbers = past_days - without_campaign_dates
 
-if campaign_numbers == 0
-  puts 0 
+# #キャンペーン対象の人数
+# campaign_numbers = past_days - without_campaign_dates
+
+# puts campaign_numbers
+
+# case  campaign_numbers
+
+
+# when  campaign_numbers == 0
+#   puts 0 
+# else
+#   discount = past_customers.first(campaign_numbers)
+#   who = discount.uniq 
+#   puts who.length
+# end
+  
+a = gets.to_i
+b = gets.to_i 
+
+c = a - b
+puts c 
+case c 
+
+when c == 0 
+  puts 0
 else 
- target = past_customers.first(campaign_numbers)
- who = target.uniq 
- puts who.length 
+  puts "0以外です"
 end 
+
+
 
