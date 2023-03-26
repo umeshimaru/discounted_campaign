@@ -34,15 +34,17 @@ end
 #キャンペーン対象の人数
 campaign_numbers = past_days - without_campaign_dates
 
+#キャンペーンの対象人数が０かそれ以外かの時で処理を分ける
 case  campaign_numbers
 
-
-when   0
+when 0
   puts 0 
 else
-  discount = past_customers.first(campaign_numbers)
-  who = discount.uniq 
-  puts who.length
+  
+  people_with_campaign = past_customers.first(campaign_numbers)
+  answer = people_with_campaign.uniq
+  puts answer.length
+  # puts who.length
 end
  
- #caseの構文ミス
+ 
